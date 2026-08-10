@@ -1,7 +1,10 @@
-import axios from 'axios';
+import axios from "axios";
+
+const apiBaseUrl =
+  import.meta.env.VITE_API_URL || "https://github-analyzer2.onrender.com";
 
 const API = axios.create({
-  baseURL: import.meta.env.VITE_API_URL || 'http://localhost:5000/api'
+  baseURL: `${apiBaseUrl}/api`,
 });
 
 export default API;

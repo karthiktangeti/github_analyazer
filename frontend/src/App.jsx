@@ -4,7 +4,7 @@ import Profile from './pages/Profile';
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/github_analyazer">
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/profile/:username" element={<Profile />} />
